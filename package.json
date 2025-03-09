@@ -1,0 +1,22 @@
+{
+  "name": "web-socket-sse-long-polling",
+  "version": "1.0.0",
+  "description": "An experimentation about long polling, sse and web socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gab0gomes/web-socket-sse-long-polling.git"
+  },
+  "author": "Gabriel Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gab0gomes/web-socket-sse-long-polling/issues"
+  },
+  "homepage": "https://github.com/gab0gomes/web-socket-sse-long-polling#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
