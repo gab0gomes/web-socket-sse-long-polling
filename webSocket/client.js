@@ -1,10 +1,12 @@
-const socket = new WebSocket('ws://example.com');
+const ws = new WebSocket('ws://localhost:3000');
 
-socket.onopen = function(event) {
-    console.log('Connection established');
-    socket.send('Hello server!');
-}
+ws.onopen = function() {
+    document.querySelector('#send').disabled = false;
+    document.querySelector('#send').addEventListener('click', function() {
+        ws.send(document.querySelector('#message').value);
+    });
+};
 
-socket.onmessage = function(event) {
-    console.log('Message from server:', event.data);
-}
+ws.onmessage = function(msg) {
+    document.querySelector('#messages').innerHTML += `<div>${msg.data}</div>`;
+};

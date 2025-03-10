@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/gab0gomes/web-socket-sse-long-polling#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ws": "^8.18.1"
   }
 }
